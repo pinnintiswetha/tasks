@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,170px);
+            background-color: rgb(255, 204, 137);
+            align-self: center;
+            justify-self: center;
+            gap: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .box{
+            background-color: rgb(254, 198, 170);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgb(207, 137, 213);
+            padding: 10px;
+            gap: 20px;
+            /* box-shadow: 2px 2px 8px 2px rgb(166, 77, 77); */
+        }
+        .box:hover{
+            box-shadow: 2px 2px 8px 2px rgb(166, 77, 77);
+            cursor: pointer;
+        }
+        .box img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        @media(max-width: 768px){
+            .box img{
+                width: 10%;
+                height: 10%;
+                border-radius: 0;
+            }
+        }
+        img + span{
+            color: #7a3213;
+            font-size: 1.2rem;
+        } 
+        img + span + span{
+            color: rgb(44, 1, 54);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/product-photography-watch-product-design-stone-top-with-brown-cloth-background-watch-displayed_1101825-61648.jpg" alt="watch">
+            <span>Product 1</span>
+            <span>$10.99</span>
+        </div>
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/product-photography-watch-product-design-stone-top-with-brown-cloth-background-watch-displayed_1101825-61648.jpg" alt="watch">
+            <span>Product 2</span>
+            <span>$10.99</span>
+        </div>
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/product-photography-watch-product-design-stone-top-with-brown-cloth-background-watch-displayed_1101825-61648.jpg" alt="watch">
+            <span>Product 3</span>
+            <span>$10.99</span>
+        </div>
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/product-photography-watch-product-design-stone-top-with-brown-cloth-background-watch-displayed_1101825-61648.jpg" alt="watch">
+            <span>Product 4</span>
+            <span>$10.99</span>
+        </div>
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/product-photography-watch-product-design-stone-top-with-brown-cloth-background-watch-displayed_1101825-61648.jpg" alt="watch">
+            <span>Product 5</span>
+            <span>$10.99</span>
+        </div>
+        <div class="box">
+            <img src="https://img.freepik.com/premium-photo/product-photography-watch-product-design-stone-top-with-brown-cloth-background-watch-displayed_1101825-61648.jpg" alt="watch">
+            <span>Product 6</span>
+            <span>$10.99</span>
+        </div>
+    </div>
+</body>
+</html>
